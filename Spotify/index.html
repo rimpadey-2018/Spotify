@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - My Favourite Music</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/2e42d2a2cf.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li class="brand">
+                    <img src="spotify_logo_PNG3.png" alt="Spotify Logo">
+                    <span>Spotify</span>
+                </li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <section class="songList">
+                <h1>Best of NCS - No Copyright Sounds</h1>
+                <div class="songItemContainer">
+                    <div class="songItem">
+                        <img src="Cover.jpeg" alt="Album Cover" class="coverIcon">
+                        <div class="songInfo">
+                            <span>Sajni Re - Lapaata Ladies</span>
+                            <span class="timestamp">05:30</span>
+                            <button class="songlistplay" aria-label="Play Song">
+                                <i class="far fa-play-circle"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="bottom">
+            <input type="range" name="range" id="myProgressBar" min="0" value="0" max="100" aria-label="Song Progress">
+            <div class="icons">
+                <!-- Font Awesome icons -->
+                <i class="fa-solid fa-3x fa-backward-step" aria-label="Previous Song"></i>
+                <i class="far fa-3x fa-play-circle" id="masterplay" aria-label="Play"></i>
+                <i class="fa-solid fa-3x fa-forward-step" aria-label="Next Song"></i>
+            </div>
+            <div class="songInfo">
+                <img src="playing.gif" width="42px" alt="" id="gif" aria-hidden="true">
+                <span>Sajni Re - Lapaata Ladies</span>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
